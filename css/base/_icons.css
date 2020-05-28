@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'ha-icons';
+  src:  url('fonts/ha-icons.eot?qnvo5n');
+  src:  url('fonts/ha-icons.eot?qnvo5n#iefix') format('embedded-opentype'),
+    url('fonts/ha-icons.ttf?qnvo5n') format('truetype'),
+    url('fonts/ha-icons.woff?qnvo5n') format('woff'),
+    url('fonts/ha-icons.svg?qnvo5n#ha-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ha-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ha-insert_chart:before {
+  content: "\e901";
+}
+.ha-poll:before {
+  content: "\e901";
+}
+.ha-assessment:before {
+  content: "\e901";
+}
+.ha-envelope:before {
+  content: "\e902";
+}
+.ha-feed:before {
+  content: "\e903";
+}
+.ha-rss:before {
+  content: "\e903";
+}
+.ha-instagram:before {
+  content: "\e904";
+}
+.ha-youtube-play:before {
+  content: "\e905";
+}
+.ha-twitter:before {
+  content: "\e906";
+}
+.ha-book:before {
+  content: "\e907";
+}
+.ha-film:before {
+  content: "\e908";
+}
+.ha-home:before {
+  content: "\e909";
+}
+.ha-facebook-square:before {
+  content: "\e90a";
+}
+.ha-caret-down:before {
+  content: "\e90b";
+}
+.ha-search:before {
+  content: "\e90c";
+}
+.ha-comments:before {
+  content: "\e900";
+}

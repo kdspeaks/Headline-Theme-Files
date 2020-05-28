@@ -1,0 +1,30 @@
+/*
+Theme Name: Headline Theme
+Author: Kunal
+Version: 1.0
+*/
+@import 'normalize.css';
+@import 'base/_mixins';
+@import 'base/_variables';
+@import 'base/_global';
+@import 'base/_icons';
+@import 'base/_utility-class';
+@import 'modules/_row';
+@import 'modules/_site-header';
+@import 'modules/_wrapper';
+@import 'modules/_main-grid';
+@import 'modules/_headline';
+@import 'modules/_overlay';
+@import 'modules/_page-section';
+@import 'modules/_trending';
+@import 'modules/_ads';
+@import 'modules/_latest-section';
+@import 'modules/_latest-section';
+@import 'modules/_category-section';
+@import 'modules/_site-footer';
+@import 'modules/_side-menu';
+@import 'modules/_reveal-item';
+@import 'modules/_site-top-header';
+@import 'modules/_megamenu';
+@import 'modules/_post';
+@import 'modules/_sidebar-post-list';

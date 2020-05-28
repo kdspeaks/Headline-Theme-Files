@@ -1,0 +1,11 @@
+.main-grid__ad {
+	margin: 20px auto;
+	max-width: 100%;
+	max-height: 140px;
+
+	img {
+		margin: 0 auto;
+		display: block;
+		max-width: 100%;
+	}
+}

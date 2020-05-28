@@ -1,0 +1,35 @@
+.site-top-header {
+	background-color: #000;
+	padding: 5px 0;
+	display: none;
+	@mixin clearList;
+
+	@mixin min992 {
+		display: block;
+	}
+
+	&__container {
+		display: flex;
+
+		a {
+			color: #fff;
+			display: block;
+			font-size: .80rem;
+		}
+		a:hover {
+			color: $lightRed;
+		}
+		li:not(:last-child) {
+			margin-right: 10px;
+		}
+
+	}
+	&__left {
+		a:hover {
+			box-shadow: inset 0 -1px 0 rgba($lightRed,.35);
+		}
+	}
+	&__right {
+		margin-left: auto;
+	}
+}

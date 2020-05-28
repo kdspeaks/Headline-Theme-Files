@@ -1,0 +1,38 @@
+.trending {
+	counter-reset: trending;
+
+	ul {
+		display: flex;
+		overflow: auto;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+
+	&__article {
+		width: 220px;
+		height: 140px;
+		border-radius: 5px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 5px;
+		display: inline-block;
+		flex-shrink: 0;
+
+		&::before {
+			counter-increment: trending;
+			 content: counter(trending);
+			 z-index: 1;
+			 position: absolute;
+			 left: -10px;
+			 top: -10px;
+			 background: rgba(#0EBFE9, 0.8);
+			 padding: 5px 11px;
+			 font-size: 1.5rem;
+			 font-weight: 500;
+			 font-family:'Lato', sans-serif;
+			 border-radius: 50%;
+			 border: 5px solid #fff;
+			 color: #fff;
+		}
+	}
+}

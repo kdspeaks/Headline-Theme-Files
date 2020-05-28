@@ -1,0 +1,48 @@
+.headline {
+		font-weight: 500;
+		font-family: 'Lato', sans-serif;
+		margin: 0 0 10px 0;
+		padding: 0;
+		font-size: 1.6rem;
+		position: relative;
+		overflow: hidden;
+		color: $lightRed;
+
+		&::after {
+			content: '';
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			height: 1px;
+			background-color: rgba($lightRed, .1);
+			margin-left: 16px;
+		}
+
+		&--extra-margin {
+			margin-left: 5px;
+		}
+
+		a {
+			color: $lightRed;
+		}
+
+		a::after {
+			content: '>';
+			transform: scaleY(1.6);
+			display: inline-block;
+			margin-left: 5px;
+			transition: all .3s ease-out;
+		}
+
+		a:hover {
+			color: #000;
+		}
+
+		a:hover::after {
+			margin-left: 15px;
+		}
+
+		span {
+			font-weight: 900;
+		}
+	}

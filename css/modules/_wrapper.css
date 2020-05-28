@@ -1,0 +1,16 @@
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	overflow: hidden;
+
+	@mixin min576 {
+		max-width: 540px;
+	}
+	
+	@mixin min768 {
+		max-width: 1248px;
+	}
+}

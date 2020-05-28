@@ -1,0 +1,227 @@
+.post {
+	&__container {
+		&__featured-image {
+			margin: -10px -10px 0 -10px;
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 5px;
+				display: block;
+			}
+		}
+
+		&__info {
+			&__title {
+				font-size: 1.9rem;
+				font-weight: 900;
+				margin: 0;
+				padding: 0;
+				color: $lightRed;
+				text-align: center;
+				@mixin min768 {
+					font-size: 2.2rem;
+					text-align: left;
+				}
+
+				@mixin min992 {
+					font-size: 2.4rem;
+				}
+			}
+			&__auth-details {
+				display: flex;
+				align-items: center;
+				margin: 10px 0;
+				font-size: .90rem;
+				font-family: $barlow;
+				color: #aaa;
+				text-transform: uppercase;
+
+				@mixin min768 {
+					font-size: .93rem;
+				}
+
+				.post__container__share {
+					margin-left: auto;
+					padding: 1px 15px;
+					color: #aaa;
+					display: flex;
+					align-items: center;
+					height: 22px;
+					border-radius: 11px;
+					box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+					font-weight: 300;
+					text-transform: uppercase;
+				}
+				.post__container__share__fb {
+					margin: 0 10px;
+					color: #3b5998;
+					font-size: 1rem;
+				}
+				.post__container__share__tw {
+					font-size: 1rem;
+					color: #00acee;
+				}
+
+				a {
+					color: $lightRed;
+				}
+				a:hover {
+					color: #000;
+				}
+			}
+			&__auth-avatar {
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			&__summary {
+				text-align: justify;
+				font-style: italic;
+				background-color: rgba($darkRed, .15);
+				border: 1px solid rgba($darkRed, .15);
+				padding: 8px;
+				border-radius: 5px;
+				color: #333;
+				box-shadow: 0 0 6px 2px rgba(#000, .15);
+
+				span {
+					display: block;
+					font-style: normal;
+					text-transform: uppercase;
+					font-weight: 800;
+					color: $lightRed;
+					margin-bottom: 5px;
+					font-family: $raleway;
+					text-align: center;
+
+					@mixin min992 {
+						text-align: left;
+					}
+				}
+			}
+		}
+		&__content::first-letter {
+			color: $lightRed;
+			float: left;
+			font-family: Georgia;
+			font-size: 75px;
+			line-height: 60px;
+			padding-top: 4px;
+			padding-right: 8px;
+			padding-left: 3px;
+		}
+
+		&__content {
+			font-size: 1.1rem;
+			font-weight: 400;
+			text-align: justify;
+			font-family: $lato;
+
+			@mixin min992 {
+				padding: 0 25px;
+			}
+
+
+			blockquote {
+			  background: rgba($lightRed, .15);
+			  border: 1px solid rgba($lightRed, .5);
+			  border-left: 10px solid rgba($lightRed, .5);
+			  margin: 1.5em 10px;
+			  padding: 0.5em 10px;
+			  quotes: "\201C""\201D""\2018""\2019";
+			  font-style: italic;
+			  border-radius: 5px;
+			}
+			blockquote:before {
+			  color: rgba($lightRed, .5);
+			  content: open-quote;
+			  font-size: 4em;
+			  line-height: 0.1em;
+			  margin-right: 0.25em;
+			  vertical-align: -0.4em;
+			  font-family: Georgia;
+			}
+
+			h2, h3, h4, h5, h6 {
+				color: $lightRed;
+				font-family: $raleway;
+			}
+			
+			ul,ol {
+				list-style: none;
+				margin: 0px;
+				padding: 0;
+			}
+
+			li {
+				display: block;
+				position: relative;
+				padding: 5px 5px 5px 14px;
+			}
+
+			li::before {
+				margin: 0 0.5rem 0 0;
+				color: $lightRed;
+				position: absolute;
+				left: 0;
+				display: block;
+			}
+
+			ul li::before {
+				content: "\e90b";
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				font-family: "ha-icons";
+				transform: rotate(-90deg);
+				font-size: 85%;
+				top: 7px;
+			}
+
+			ol {
+				counter-reset: li;
+			}
+
+			ol li {
+				padding-left: 26px;
+			}
+
+			ol li::before {
+				counter-increment: li;
+				content: counter(li, decimal-leading-zero)".";
+				margin: 0 0.5rem 0 0;
+				font-weight: 600;
+				font-family: $barlow;
+				top: 4px;
+			}
+		}
+		&__tags {
+			 border-top: 1px solid #ECEEF2;
+			 padding: 10px 10px 0;
+			 margin: 0 -10px;
+			a {
+				display: inline-flex;
+				text-transform: uppercase;
+				background-color: #eee;
+				color: #999;
+				padding: 0 10px;
+				font-size: .9rem;
+				font-family: $barlow;
+				font-weight: 300;
+				margin-bottom: 4px;
+				border-radius: 15px;
+				height: 30px;
+				align-items: center;
+				border: 1px solid rgba(#aaa, .25);
+			}
+			
+			a:hover {
+				color: #fff;
+				background-color: $lightRed
+			}
+		}
+	}
+}
